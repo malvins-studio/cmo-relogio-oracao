@@ -319,6 +319,7 @@
                 const currentDate = new Date(2024, 4, 9); //new Date();
                 if (parseInt(dayEl.innerText) === currentDate.getDate()) {
                   dayEl.classList.add('bg-blue-600', 'text-white');
+                  dayEl.classList.remove('bg-green-100');
                 }
               }
 
