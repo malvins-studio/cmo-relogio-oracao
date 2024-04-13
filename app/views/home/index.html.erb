@@ -232,223 +232,225 @@
       <!-- BEGIN: Grupo Listagem PNAS -->
       <div class="bg-white">
         <div class="mx-auto grid pr-15 pl-15 xl:grid-cols-3 grid-cols-1">
-          <div class="max-w-2xl">
-            <h2 class="text-3xl font-bold tracking-tight lg:text-right text-center text-gray-900 sm:text-4xl">Povos Não Alcançados</h2>
-            <p class="mt-6 text-lg leading-8 text-gray-600 lg:text-right text-center">Existem mais de 7.400 Povos Não Alcançados pelo Evangelho de Jesus Cristo (PNAs). Entendemos que podemos fazer nossa parte na grande comissão, cada cristão, enquanto parte do corpo de Cristo, orando ao SENHOR da seara para que mande mais trabalhadores à sua colheita (Mateus 9:38).</p>
-          </div>
 
-          <!-- BEGIN: Calendario -->
-          <div class="flex justify-left">
-            <div class="mx-auto p-4">
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <div class="flex items-center justify-between px-6 py-3 bg-gray-700">
-                        <button id="prevMonth" class="text-white">Previous</button>
-                        <h2 id="currentMonth" class="text-white"></h2>
-                        <button id="nextMonth" class="text-white">Next</button>
-                    </div>
-                    <div class="grid grid-cols-7 gap-2 p-4" id="calendar">
-                        <!-- Calendar Days Go Here -->
-                    </div>
-                    <div id="myModal" class="modal hidden fixed inset-0 flex items-center justify-center z-50">
-                      <div class="modal-overlay absolute inset-0 bg-black opacity-50"></div>
+          <!-- BEGIN: Texto PNAs -->
+            <div class="max-w-2xl pt-4">
+              <h2 class="text-3xl font-bold tracking-tight lg:text-right text-center text-gray-900 sm:text-4xl">Povos Não Alcançados</h2>
+              <p class="mt-6 text-lg leading-8 text-gray-600 lg:text-right text-center">Existem mais de 7.400 Povos Não Alcançados pelo Evangelho de Jesus Cristo (PNAs). Entendemos que podemos fazer nossa parte na grande comissão, cada cristão, enquanto parte do corpo de Cristo, orando ao SENHOR da seara para que mande mais trabalhadores à sua colheita (Mateus 9:38).</p>
+            </div>
+          <!-- END: Texto PNAs -->
 
-                      <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
-                        <div class="modal-content py-4 text-left px-6">
-                          <div class="flex justify-between items-center pb-3">
-                            <p class="text-2xl font-bold">Selected Date</p>
-                            <button id="closeModal" class="modal-close px-3 py-1 rounded-full bg-gray-200 hover:bg-gray-300 focus:outline-none focus:ring">✕</button>
+          <!-- BEGIN: Secao Calendario -->
+            <div class="flex justify-center">
+              <div class="mx-auto p-4">
+                  <div class="bg-white shadow-lg rounded-lg overflow-hidden text-center">
+                      <div class="py-3 bg-[#2cb4a5] shadow-lg">
+                          <h2 id="currentMonth" class="text-white text-xl">
+                            Maio
+                          </h2>
+                      </div>
+                      <!-- Componente Calendario -->
+                      <div class="grid grid-cols-7 gap-2 p-4" id="calendar"><div class="text-center font-semibold">Dom</div><div class="text-center font-semibold">Seg</div><div class="text-center font-semibold">Ter</div><div class="text-center font-semibold">Qua</div><div class="text-center font-semibold">Qui</div><div class="text-center font-semibold">Sex</div><div class="text-center font-semibold">Sáb</div><div></div><div></div><div></div><div class="text-center py-2 border cursor-pointer">1</div><div class="text-center py-2 border cursor-pointer">2</div><div class="text-center py-2 border cursor-pointer">3</div><div class="text-center py-2 border cursor-pointer">4</div><div class="text-center py-2 border cursor-pointer">5</div><div class="text-center py-2 border cursor-pointer">6</div><div class="text-center py-2 border cursor-pointer">7</div><div class="text-center py-2 border cursor-pointer">8</div><div class="text-center py-2 border cursor-pointer">9</div><div class="text-center py-2 border cursor-pointer">10</div><div class="text-center py-2 border cursor-pointer">11</div><div class="text-center py-2 border cursor-pointer">12</div><div class="text-center py-2 border cursor-pointer">13</div><div class="text-center py-2 border cursor-pointer">14</div><div class="text-center py-2 border cursor-pointer">15</div><div class="text-center py-2 border cursor-pointer">16</div><div class="text-center py-2 border cursor-pointer">17</div><div class="text-center py-2 border cursor-pointer">18</div><div class="text-center py-2 border cursor-pointer">19</div><div class="text-center py-2 border cursor-pointer">20</div><div class="text-center py-2 border cursor-pointer">21</div><div class="text-center py-2 border cursor-pointer">22</div><div class="text-center py-2 border cursor-pointer">23</div><div class="text-center py-2 border cursor-pointer">24</div><div class="text-center py-2 border cursor-pointer">25</div><div class="text-center py-2 border cursor-pointer">26</div><div class="text-center py-2 border cursor-pointer">27</div><div class="text-center py-2 border cursor-pointer">28</div><div class="text-center py-2 border cursor-pointer">29</div><div class="text-center py-2 border cursor-pointer">30</div><div class="text-center py-2 border cursor-pointer">31</div></div>
+                      <div id="myModal" class="modal hidden fixed inset-0 flex items-center justify-center z-50">
+                        <div class="modal-overlay absolute inset-0 bg-black opacity-50"></div>
+
+                        <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+                          <div class="modal-content py-4 text-left px-6">
+                            <div class="flex justify-between items-center pb-3">
+                              <p class="text-2xl font-bold">Selected Date</p>
+                              <button id="closeModal" class="modal-close px-3 py-1 rounded-full bg-gray-200 hover:bg-gray-300 focus:outline-none focus:ring">✕</button>
+                            </div>
+                            <div id="modalDate" class="text-xl font-semibold"></div>
                           </div>
-                          <div id="modalDate" class="text-xl font-semibold"></div>
                         </div>
                       </div>
-                    </div>
-                </div>
+                  </div>
+              </div>
             </div>
-          </div>
-          <script>
-            // Function to generate the calendar for a specific month and year
-            function generateCalendar(year, month) {
-                const calendarElement = document.getElementById('calendar');
-                const currentMonthElement = document.getElementById('currentMonth');
+            <script>
+              // Function to generate the calendar for a specific month and year
+              function generateCalendar(year, month) {
+                  const calendarElement = document.getElementById('calendar');
+                  const currentMonthElement = document.getElementById('currentMonth');
 
-                // Create a date object for the first day of the specified month
-                const firstDayOfMonth = new Date(year, month, 1);
-                const daysInMonth = new Date(year, month + 1, 0).getDate();
+                  // Create a date object for the first day of the specified month
+                  const firstDayOfMonth = new Date(year, month, 1);
+                  const daysInMonth = new Date(year, month + 1, 0).getDate();
 
-                // Clear the calendar
-                calendarElement.innerHTML = '';
+                  // Clear the calendar
+                  calendarElement.innerHTML = '';
 
-                // Set the current month text
-                const monthNames = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
-                currentMonthElement.innerText = `${monthNames[month]} ${year}`;
+                  // Set the current month text
+                  const monthNames = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+                  currentMonthElement.innerText = `${monthNames[month]} ${year}`;
 
-                // Calculate the day of the week for the first day of the month (0 - Sunday, 1 - Monday, ..., 6 - Saturday)
-                const firstDayOfWeek = firstDayOfMonth.getDay();
+                  // Calculate the day of the week for the first day of the month (0 - Sunday, 1 - Monday, ..., 6 - Saturday)
+                  const firstDayOfWeek = firstDayOfMonth.getDay();
 
-                // Create headers for the days of the week
-                const daysOfWeek = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'];
-                daysOfWeek.forEach(day => {
-                    const dayElement = document.createElement('div');
-                    dayElement.className = 'text-center font-semibold';
-                    dayElement.innerText = day;
-                    calendarElement.appendChild(dayElement);
-                });
+                  // Create headers for the days of the week
+                  const daysOfWeek = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'];
+                  daysOfWeek.forEach(day => {
+                      const dayElement = document.createElement('div');
+                      dayElement.className = 'text-center font-semibold';
+                      dayElement.innerText = day;
+                      calendarElement.appendChild(dayElement);
+                  });
 
-                // Create empty boxes for days before the first day of the month
-                for (let i = 0; i < firstDayOfWeek; i++) {
-                    const emptyDayElement = document.createElement('div');
-                    calendarElement.appendChild(emptyDayElement);
+                  // Create empty boxes for days before the first day of the month
+                  for (let i = 0; i < firstDayOfWeek; i++) {
+                      const emptyDayElement = document.createElement('div');
+                      calendarElement.appendChild(emptyDayElement);
+                  }
+
+                  // Create boxes for each day of the month
+                  for (let day = 1; day <= daysInMonth; day++) {
+                      const dayElement = document.createElement('div');
+                      dayElement.className = 'text-center py-2 border cursor-pointer';
+                      dayElement.innerText = day;
+
+                      // Check if this date is the current date
+                      highlightToday(dayElement);
+
+                      calendarElement.appendChild(dayElement);
+                  }
+              }
+
+              function highlightToday(dayEl) {
+                const currentDate = new Date(2024, 4, 9); //new Date();
+                if (parseInt(dayEl.innerText) === currentDate.getDate()) {
+                  dayEl.classList.add('bg-blue-600', 'text-white');
                 }
+              }
 
-                // Create boxes for each day of the month
-                for (let day = 1; day <= daysInMonth; day++) {
-                    const dayElement = document.createElement('div');
-                    dayElement.className = 'text-center py-2 border cursor-pointer';
-                    dayElement.innerText = day;
+              // Initialize the calendar with the current month and year
+              const calendarDate = new Date(2024, 4, 1);
+              let currentYear = 2024;
+              let currentMonth = calendarDate.getMonth();
+              // generateCalendar(2024, 4);
 
-                    // Check if this date is the current date
-                    const currentDate = new Date();
-                    if (year === currentDate.getFullYear() && month === currentDate.getMonth() && day === currentDate.getDate()) {
-                        dayElement.classList.add('bg-blue-500', 'text-white'); // Add classes for the indicator
-                    }
+              // Function to show the modal with the selected date
+              function showModal(selectedDate) {
+                  const modal = document.getElementById('myModal');
+                  const modalDateElement = document.getElementById('modalDate');
+                  modalDateElement.innerText = selectedDate;
+                  modal.classList.remove('hidden');
+              }
 
-                    calendarElement.appendChild(dayElement);
+              // Function to hide the modal
+              function hideModal() {
+                  const modal = document.getElementById('myModal');
+                  modal.classList.add('hidden');
+              }
+
+              // Event listener for date click events
+              const dayElements = document.querySelectorAll('.cursor-pointer');
+              dayElements.forEach(dayElement => {
+                const dayPos = parseInt(dayElement.innerText) - 1;
+                if ( Array(31).fill(1,8,19)[dayPos] == 1 ) {
+                  // Set CMO days to green
+                  dayElement.classList.add('bg-green-100');
+
+                  // Set click event
+                  dayElement.addEventListener('click', () => {
+                      const day = parseInt(dayElement.innerText);
+                      const selectedDate = new Date(currentYear, currentMonth, day);
+                      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                      const formattedDate = selectedDate.toLocaleDateString(undefined, options);
+                      showModal(day);
+                  });
+
+                  // Highlight current day
+                      highlightToday(dayElement);
+                } else {
+                  dayElements[dayPos].classList.add('bg-gray-200');
                 }
-            }
+              });
 
-            // Initialize the calendar with the current month and year
-            const currentDate = new Date();
-            let currentYear = currentDate.getFullYear();
-            let currentMonth = currentDate.getMonth();
-            generateCalendar(currentYear, currentMonth);
+              // Event listener for closing the modal
+              document.getElementById('closeModal').addEventListener('click', () => {
+                  hideModal();
+              });
 
-            // Event listeners for previous and next month buttons
-            document.getElementById('prevMonth').addEventListener('click', () => {
-                currentMonth--;
-                if (currentMonth < 0) {
-                    currentMonth = 11;
-                    currentYear--;
-                }
-                generateCalendar(currentYear, currentMonth);
-            });
-
-            document.getElementById('nextMonth').addEventListener('click', () => {
-                currentMonth++;
-                if (currentMonth > 11) {
-                    currentMonth = 0;
-                    currentYear++;
-                }
-                generateCalendar(currentYear, currentMonth);
-            });
-
-            // Function to show the modal with the selected date
-            function showModal(selectedDate) {
-                const modal = document.getElementById('myModal');
-                const modalDateElement = document.getElementById('modalDate');
-                modalDateElement.innerText = selectedDate;
-                modal.classList.remove('hidden');
-            }
-
-            // Function to hide the modal
-            function hideModal() {
-                const modal = document.getElementById('myModal');
-                modal.classList.add('hidden');
-            }
-
-            // Event listener for date click events
-            const dayElements = document.querySelectorAll('.cursor-pointer');
-            dayElements.forEach(dayElement => {
-                dayElement.addEventListener('click', () => {
-                    const day = parseInt(dayElement.innerText);
-                    const selectedDate = new Date(currentYear, currentMonth, day);
-                    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-                    const formattedDate = selectedDate.toLocaleDateString(undefined, options);
-                });
-            });
-
-            // Event listener for closing the modal
-            document.getElementById('closeModal').addEventListener('click', () => {
-                hideModal();
-            });
-
-          </script>
+            </script>
           <!-- END: Calendario -->
 
-          <!-- Listagem PNAs -->
-          <div class="flex flex-col justify-center items-center">
-            <div class="relative flex max-w-[450px] h-[600px] w-full flex-col rounded-[10px] border-[1px] border-gray-200 bg-white bg-clip-border shadow-md shadow-[#F3F3F3] pl-2 pr-2 pb-2">
-              <div class="flex h-fit w-full items-center justify-center rounded-t-2xl bg-white px-4 pb-[20px] pt-4 shadow-2xl shadow-gray-100">
-                <h4 class="font-bold text-navy-700 text-center text-sm lg:text-base">
-                  240 Povos Não Alcançados
-                  <span class="invisible md:visible"> | </span>
-                  <span class="lg:hidden"><br></span>
-                  240 Horas de Oração
-                </h4>
-              </div>
-              <div class="w-full overflow-x-scroll md:overflow-x-hidden">
-              <table role="table" class="w-full min-w-[350px] overflow-x-scroll">
-                  <thead>
-                  <tr role="row">
-                      <th class="pl-10" colspan="1" role="columnheader" title="Toggle SortBy" style="cursor: pointer">
-                        <div class="flex items-center justify-between pb-2 pt-4 text-start uppercase tracking-wide text-gray-600 text-xs">
-                            Povo Não Alançado
-                        </div>
-                      </th>
-                      <th colspan="1" role="columnheader" title="Toggle SortBy" style="cursor: pointer">
-                        <div class="flex text-xs items-center pb-2 pt-4 text-start uppercase text-gray-600 tracking-wide ">
-                            População
-                        </div>
-                      </th>
-                      <th class="hidden" colspan="1" role="columnheader" title="Toggle SortBy" style="cursor: pointer">
-                        <div class="flex text-xs items-right uppercase justify-between pb-2 pt-4 text-start tracking-wide text-gray-600">
-                            % Pop. Povo / Total PNAs
-                        </div>
-                      </th>
-                  </tr>
-                  </thead>
-                  <tbody role="rowgroup" class="px-4">
-                  <% @pnas.each do |pna| %>
-                    <tr role="row" class="pl-40 hover:bg-green-200 odd:bg-gray-100">
-                        <td class="py-1 text-sm" role="cell">
-                          <a class="hover:underline hover:underline-offset-8" target="_blank" href="https://joshuaproject.net/people_groups/<%= pna[:peopleid3] %>/">
+          <!-- BEGIN: Listagem PNAs -->
+            <div class="flex flex-col justify-center items-center pt-4">
+              <div class="relative flex max-w-[450px] h-[600px] w-full flex-col rounded-[10px] border-[1px] border-gray-200 bg-white bg-clip-border shadow-md shadow-[#F3F3F3] pl-2 pr-2 pb-2">
+                <div class="flex h-fit w-full items-center justify-center rounded-t-2xl bg-white px-4 pb-[20px] pt-4 shadow-2xl shadow-gray-100">
+                  <h4 class="font-bold text-navy-700 text-center text-sm lg:text-base">
+                    240 Povos Não Alcançados
+                    <span class="invisible md:visible"> | </span>
+                    <span class="lg:hidden"><br></span>
+                    240 Horas de Oração
+                  </h4>
+                </div>
+                <div class="text-center text-green-500"><h5>Mostrando 24 povos para o dia 9/5</h5></div>
+                <div class="w-full overflow-x-scroll md:overflow-x-hidden">
+                <table role="table" class="w-full min-w-[350px] overflow-x-scroll">
+                    <thead>
+                    <tr role="row">
+                        <th class="pl-10" colspan="1" role="columnheader" title="Toggle SortBy" style="cursor: pointer">
+                          <div class="flex items-center justify-between pb-2 pt-4 text-start uppercase tracking-wide text-gray-600 text-xs">
+                              Povo Não Alançado
+                          </div>
+                        </th>
+                        <th colspan="1" role="columnheader" title="Toggle SortBy" style="cursor: pointer">
+                          <div class="flex text-xs items-center pb-2 pt-4 text-start uppercase text-gray-600 tracking-wide ">
+                              População
+                          </div>
+                        </th>
+                        <th class="hidden" colspan="1" role="columnheader" title="Toggle SortBy" style="cursor: pointer">
+                          <div class="flex text-xs items-right uppercase justify-between pb-2 pt-4 text-start tracking-wide text-gray-600">
+                              % Pop. Povo / Total PNAs
+                          </div>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody role="rowgroup" class="px-4">
+                    <% @pnas.each.with_index do |pna, i| %>
+                      <tr role="row" class="pl-40 hover:bg-green-200 odd:bg-gray-100">
+                          <td class="py-1 text-sm" role="cell">
                             <div class="flex items-center gap-3">
+                                <div class="text-blue-400"><%= "%02d" % i %>:00</div>
                                 <div class="h-[50px] w-[50px] rounded-full">
                                     <img src="https://joshuaproject.net/assets/media/profiles/mobile/p<%= pna[:peopleid3] %>.jpg"
                                     class="h-full w-full rounded-full"
                                     alt="Foto Povo Não Alcançado"
                                     onerror="this.src='https://joshuaproject.net/assets/img/pg_placeholder.jpg'"/>
                                 </div>
-                                <div class="grid">
-                                  <p class="font-bold text-navy-700 dark:text-white">
-                                    <%= pna[:peopnameacrosscountries] %></p>
-                                  <p><span class=""><%= pna[:ctry] %></span></p>
+                                <a class="hover:underline hover:underline-offset-8" target="_blank" href="https://joshuaproject.net/people_groups/<%= pna[:peopleid3] %>/">
+                                  <div class="grid">
+                                    <p class="font-bold text-navy-700 dark:text-white">
+                                      <%= pna[:peopnameacrosscountries] %></p>
+                                    <p><span class=""><%= pna[:ctry] %></span></p>
+                                  </div>
+                                </a>
+                            </div>
+                          </td>
+                          <td class="py-3 text-sm" role="cell">
+                            <p class="text-md font-medium text-gray-600 dark:text-white">
+                              <%= numanize pna[:population] || 'desconhecida' %>
+                            </p>
+                          </td>
+                          <td class="hidden text-sm" role="cell">
+                            <div class="flex font-bold gap-3">
+                              <div class="h-2 w-16 rounded-full bg-gray-200 dark:bg-navy-700">
+                                <div class="flex h-full items-center justify-center rounded-md bg-green-600 dark:bg-brand-400"
+                                    style="width: <%= numanize percent_of_total(pna[:population]) * 3.7 %>%">
                                 </div>
-                            </div>
-                          </a>
-                        </td>
-                        <td class="py-3 text-sm" role="cell">
-                          <p class="text-md font-medium text-gray-600 dark:text-white">
-                            <%= numanize pna[:population] || 'desconhecida' %>
-                          </p>
-                        </td>
-                        <td class="hidden text-sm" role="cell">
-                          <div class="flex font-bold gap-3">
-                            <div class="h-2 w-16 rounded-full bg-gray-200 dark:bg-navy-700">
-                              <div class="flex h-full items-center justify-center rounded-md bg-green-600 dark:bg-brand-400"
-                                  style="width: <%= numanize percent_of_total(pna[:population]) * 3.7 %>%">
                               </div>
+                              <div class="text-xs r-0"><%= percent_of_total pna[:population] %>%</div>
                             </div>
-                            <div class="text-xs r-0"><%= percent_of_total pna[:population] %>%</div>
-                          </div>
-                        </td>
-                    </tr>
-                  <% end %>
-                  </tbody>
-              </table>
+                          </td>
+                      </tr>
+                    <% end %>
+                    </tbody>
+                </table>
+                </div>
               </div>
-          </div>
-          </div>
-          <!-- /Listagem PNAs -->
+            </div>
+          <!-- END: Listagem PNAs -->
 
         </div>
       </div>
