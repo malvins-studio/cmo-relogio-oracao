@@ -14,7 +14,7 @@ class HomeController < ApplicationController
 
     respond_to do |format|
       if @institution.save
-        flash[:notice] = "Seu cadastro foi realizado. Deus abençoe!"
+        session[:notice] = "Seu cadastro foi realizado. Deus abençoe!"
         format.html { redirect_to action: 'index' }
       else
         format.html { render :new_institution, status: :unprocessable_entity }

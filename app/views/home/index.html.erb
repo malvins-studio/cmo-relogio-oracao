@@ -1,7 +1,11 @@
-<% flash.each do |type, msg| %>
-  <div class="text-center min-h-15 h-15 content-middle text-lg text-bold" style="color: blue">
-    <h2 class="bg-green-10 text-xl font-bold text-center"><%= msg %></h2>
+<% if session[:notice] %>
+  <div id="error_msg" class="text-center min-h-15 h-15 content-middle text-lg text-bold" style="color: blue">
+    <h2 class="bg-green-10 text-xl font-bold text-center"><%= session[:notice] %></h2>
   </div>
+  <% session[:notice] = nil %>
+  <script>
+    window.setTimeout( () => { document.getElementById('error_msg').classList.add('hidden') }, 5000);
+  </script>
 <% end %>
 
 <%= render partial: "pnas"%>
