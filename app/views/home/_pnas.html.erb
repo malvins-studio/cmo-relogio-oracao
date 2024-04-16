@@ -86,8 +86,8 @@
         function highlightToday(dayEl) {
           const currentDate = new Date(2024, 4, 9); //new Date();
           if (parseInt(dayEl.innerText) === currentDate.getDate()) {
+            dayEl.classList.remove('bg-green-100', 'bg-gray-200');
             dayEl.classList.add('bg-blue-600', 'text-white');
-            dayEl.classList.remove('bg-green-100');
           }
         }
 
@@ -125,11 +125,11 @@
                 const selectedDate = new Date(currentYear, currentMonth, day);
                 const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 const formattedDate = selectedDate.toLocaleDateString(undefined, options);
-                showModal(day);
+                // showModal(day);
             });
 
             // Highlight current day
-                highlightToday(dayElement);
+            highlightToday(dayElement);
           } else {
             dayElements[dayPos].classList.add('bg-gray-200');
           }

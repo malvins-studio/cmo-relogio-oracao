@@ -9,7 +9,7 @@
             <% if 'index' === action_name %>
               <%= link_to "240 Povos Não Alcançados (PNAs)", '/', class:"bg-gray-100 text-[#2cb4a4] rounded-md px-3 py-2 text-sm font-medium  " %>
               <%= link_to "Relógio de Oração Local", nova_igreja_local_url, class:"text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" %>
-            <% elsif 'new_institution' === action_name %>
+            <% elsif ['new_institution', 'create_institution'].include? action_name  %>
               <%= link_to "240 Povos Não Alcançados (PNAs)", '/', class:"text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" %>
               <%= link_to "Relógio de Oração Local", nova_igreja_local_url, class:"bg-gray-100 text-[#2cb4a4] rounded-md px-3 py-2 text-sm font-medium" %>
             <% end %>
