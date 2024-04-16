@@ -1,4 +1,6 @@
 class HomeController < ApplicationController
+  skip_before_action :verify_authenticity_token, only: [:create_institution]
+
   def index
     @pnas = lazy_load_pnas[0..23]
   end
