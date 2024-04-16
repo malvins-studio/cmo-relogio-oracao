@@ -12,6 +12,17 @@
   </head>
 
   <body class="h-full">
-    <%= yield %>
+    <div class="min-h-full">
+      <%= render partial: "header" %>
+      <%= render partial: "menu" %>
+      <main>
+        <div class="bg-white mx-auto pr-5 pl-5">
+          <%= yield %>
+        </div>
+      </main>
+    </div>
   </body>
+  <footer class="bg-white">
+    <center class="text-gray-500">&commat; copyright 2024</center>
+  </footer>
 </html>
